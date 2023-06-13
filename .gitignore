@@ -45,3 +45,4 @@ bin/
 settings.gradle
 gradlew
 *.bat
+/out
