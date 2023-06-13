@@ -46,3 +46,4 @@ settings.gradle
 gradlew
 *.bat
 /out
+/.idea
