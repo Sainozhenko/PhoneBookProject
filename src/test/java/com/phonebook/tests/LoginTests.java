@@ -5,8 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class CreateAccountTests extends TestBase {
-    //precondition: user should be logged out
+public class LoginTests extends TestBase{
     @BeforeMethod
     public void ensurePrecondition(){
         if(!isElementPresent(By.xpath("//a[.='LOGIN']"))){
@@ -17,7 +16,7 @@ public class CreateAccountTests extends TestBase {
     }
 
     @Test
-    public void existedUserRegistrationNegativeTest(){
+    public void loginPositiveTest(){
         //enter email field
         //[placeholder='Email']
         type(By.cssSelector("[placeholder='Email']"), "ma121nnnnnn@gmail.com");
@@ -30,10 +29,12 @@ public class CreateAccountTests extends TestBase {
 
         //click on Registration button
         //by.name - registration
-        //driver.findElement(By.cssSelector(By.name())).click();
-        click(By.name("registration"));
+//        driver.findElement(By.cssSelector(By.name())).click();
+        click(By.name("login"));
 
         //assert user logged in
-        Assert.assertTrue(isAlertPresent());
+        Assert.assertTrue(isElementPresent1(By.xpath("//button[.='Sign Out']")));
+
+
     }
 }
