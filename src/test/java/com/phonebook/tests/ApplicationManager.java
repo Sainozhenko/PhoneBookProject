@@ -139,4 +139,10 @@ public class ApplicationManager {
     public boolean isAboutLinkPresent() {
         return isElementPresent1(By.xpath("//a[@href='/about']"));
     }
+    public void searchNewCreatedContact() {
+        click(By.cssSelector("h3"));
+    }
+    public void removeElement() {
+        click(By.xpath("//button[text()='Remove']"));
+    }
 }

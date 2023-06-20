@@ -32,8 +32,8 @@ public class CreateContactTest extends TestBase{
     }
     @AfterMethod
     public void removeContact(){
-        searchNewCreatedContact();
-        removeElement();
+        app.searchNewCreatedContact();
+        app.removeElement();
     }
 
 }

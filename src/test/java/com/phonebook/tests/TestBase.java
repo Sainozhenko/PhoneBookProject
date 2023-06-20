@@ -8,14 +8,6 @@ public class TestBase {
 
     protected static ApplicationManager app = new ApplicationManager();
 
-    public static void searchNewCreatedContact() {
-        app.click(By.cssSelector("h3"));
-    }
-
-    public static void removeElement() {
-        app.click(By.xpath("//button[text()='Remove']"));
-    }
-
     @BeforeMethod
     public void setUp() {
         app.init();
