@@ -6,27 +6,33 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTests extends TestBase{
+
     @BeforeMethod
-    public void ensurePrecondition(){
-        if(!app.isLoginLinkPresent()){
-            app.clickOnSignOutButton();
+    public void ensurePrecondition() {
+        if (!app.getHeader().isLoginLinkPresent()) {
+            app.getHeader().clickOnSignOutButton();
         }
-        app.clickOnLoginLink();
+        app.getHeader().clickOnLoginLink();
     }
 
     @Test
-    public void loginPositiveTest(){
-        app.fillLoginRegistrationForm(new User()
-                .setEmail("ma121nnnnnn@gmail.com")
-                .setPassword( "M12annn1234$"));
-
-        app.clickOnLoginButton();
-        Assert.assertTrue(app.isSignOutButtonPresent());
+    public void loginPositiveTest() {
+        //enter email field
+        app.getUser().fillLoginRegistrationForm(new User()
+                .setEmail("kan@gmai.com")
+                .setPassword("Kan123$-_$"));
+        //click on Login button
+        app.getUser().clickOnLoginButton();
+        //assert user logged in(check Sign Out button displayed)
+        Assert.assertTrue(app.getHeader().isSignOutButtonPresent());
     }
+
     @Test
-    public void loginNegativeWithoutPasswordTest(){
-        app.fillLoginRegistrationForm(new User().setEmail("ma121nnnnnn@gmail.com"));
-        app.clickOnLoginButton();
-        Assert.assertTrue(app.isAlertPresent());
+    public void loginNegativeWithoutPasswordTest() {
+        //enter email field
+        app.getUser().fillLoginRegistrationForm(new User().setEmail("kan@gmai.com"));
+        //click on Login button
+        app.getUser().clickOnLoginButton();
+        Assert.assertTrue(app.getUser().isAlertPresent());
     }
 }

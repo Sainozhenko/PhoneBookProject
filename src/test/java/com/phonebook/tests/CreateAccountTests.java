@@ -1,26 +1,33 @@
 package com.phonebook.tests;
 
-import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
+        import org.testng.Assert;
+        import org.testng.annotations.BeforeMethod;
+        import org.testng.annotations.Test;
 
 public class CreateAccountTests extends TestBase {
+    //int i =(int) (System.currentTimeMillis() / 100)%3600; mozhno potom dobavljatj
+    // potom i peremenuju vesde i budet menjatza telefonnummer
     //precondition: user should be logged out
     @BeforeMethod
     public void ensurePrecondition() {
-        if (!app.isLoginLinkPresent()) {
-            app.clickOnSignOutButton();
-
+        if (!app.getHeader().isLoginLinkPresent()) {
+            app.getHeader().clickOnSignOutButton();
         }
-        app.clickOnSignOutButton();
+        //click on Login link
+        app.getHeader().clickOnLoginLink();
     }
-
 
     @Test
-    public void existedUserRegistrationNegativeTest(){
-        app.fillLoginRegistrationForm(new User().setEmail("ma121nnnnnn@gmail.com").setPassword("M12annn1234$"));
-        app.clickOnRegistrationButton();
-        Assert.assertTrue(app.isAlertPresent());
+    public void existedUserRegistrationNegativeTest() {
+        //enter email field
+        //enter password field
+        app.getUser().fillLoginRegistrationForm(new User().setEmail("ma121nnnnnn@gmail.com").setPassword("M12annn1234$"));
+        //click on Registration
+        app.getUser().clickOnRegistrationButton();
+        //assert user logged in(check Sign Out button displayed)
+        Assert.assertTrue(app.getContact().isAlertPresent());
     }
 
+
 }
+

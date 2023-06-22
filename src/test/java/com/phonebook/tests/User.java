@@ -1,7 +1,6 @@
 package com.phonebook.tests;
 
 public class User {
-
     public String email;
     public String password;
 

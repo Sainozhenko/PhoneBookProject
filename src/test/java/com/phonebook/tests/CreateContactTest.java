@@ -1,39 +1,46 @@
 package com.phonebook.tests;
 
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class CreateContactTest extends TestBase{
-
+public class CreateContactTest extends TestBase {
     @BeforeMethod
-    public void ensurePrecondition(){
-        if(!app.isLoginLinkPresent()){
-            app.click(By.xpath("//button[.='Sign Out']"));
-        }  
-        app.clickOnLoginLink();
-        app.fillLoginRegistrationForm(new User().setEmail("ma121nnnnnn@gmail.com").setPassword( "M12annn1234$"));
-        app.clickOnLoginButton();
+    public void ensurePrecondition() {
+        if (!app.getHeader().isLoginLinkPresent()) {
+            app.getHeader().clickOnSignOutButton();
+        }
+        app.getHeader().clickOnLoginLink();
+        app.getUser().fillLoginRegistrationForm(new User().setEmail("kan@gmai.com").setPassword("Kan123$-_$"));
+        app.getUser().clickOnLoginButton();
     }
 
     @Test
-    public void addContactPositiveTest(){
+    public void addContactPositiveTest() {
         //click on the ADD link
-        app.clickOnAddLink();
-//        int i = (int) (System.currentTimeMillis() / 1000) % 3600;
+        app.getHeader().clickOnAddLink();
+        // int i = (int) (System.currentTimeMillis() / 1000)%3600;
         //fill in the add contact form
-        app.fillAddContactForm("Abdul", "Musaev", "01768786612", "abdulmusaev98@gmail.com", "Kazachstan", "grill-man");
+        app.getContact().fillAddContactForm(new Contact()
+                .setName("Karl")
+                .setLastname("Adam")
+                .setPhone("1234567890")
+                .setEmail("adam@gm.com")
+                .setAddress("Koblenz")
+                .setDesc("goalkeeper"));
         //click on the Save button
-        app.clickOnSaveButton();
+        app.getContact().clickOnSaveButton();
         //assert the contact is added
-        Assert.assertTrue(app.isContactCreated("Abdul"));
-    }
-    @AfterMethod
-    public void removeContact(){
-        app.searchNewCreatedContact();
-        app.removeElement();
+        Assert.assertTrue(app.getContact().isContactCreated("Karl"));
     }
 
+    @AfterMethod
+    public void removeContact() {
+        app.getContact().searchNewCreatedContact();
+        app.getContact().removeElement();
+    }
 }
+//  public void postCondition() {
+//        app.getContact().removeContact();
+//    }
