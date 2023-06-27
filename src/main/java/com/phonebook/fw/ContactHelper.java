@@ -1,5 +1,6 @@
-package com.phonebook.tests;
+package com.phonebook.fw;
 
+import com.phonebook.model.Contact;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -51,4 +52,12 @@ public class ContactHelper extends BaseHelper {
     public boolean isContactListEmpty() {
         return driver.findElements(By.cssSelector(".contact-item_card__2SOIM")).isEmpty();
     }
+
+    public int sizeOfContacts() {
+        if(isElementPresent(By.cssSelector(".contact-item_card__2SOIM"))){
+            return driver.findElements(By.cssSelector(".contact-item_card__2SOIM")).size();
+        }
+        return 0;
+    }
+
 }

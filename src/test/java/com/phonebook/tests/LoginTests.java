@@ -1,6 +1,7 @@
 package com.phonebook.tests;
 
 
+import com.phonebook.model.User;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -19,8 +20,8 @@ public class LoginTests extends TestBase{
     public void loginPositiveTest() {
         //enter email field
         app.getUser().fillLoginRegistrationForm(new User()
-                .setEmail("kan@gmai.com")
-                .setPassword("Kan123$-_$"));
+                .setEmail("ma121nnnnnn@gmail.com")
+                .setPassword("M12annn1234$"));
         //click on Login button
         app.getUser().clickOnLoginButton();
         //assert user logged in(check Sign Out button displayed)

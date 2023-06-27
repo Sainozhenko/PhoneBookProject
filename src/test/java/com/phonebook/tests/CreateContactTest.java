@@ -1,5 +1,8 @@
 package com.phonebook.tests;
 
+import com.phonebook.fw.DataProviders;
+import com.phonebook.model.Contact;
+import com.phonebook.model.User;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -12,7 +15,7 @@ public class CreateContactTest extends TestBase {
             app.getHeader().clickOnSignOutButton();
         }
         app.getHeader().clickOnLoginLink();
-        app.getUser().fillLoginRegistrationForm(new User().setEmail("kan@gmai.com").setPassword("Kan123$-_$"));
+        app.getUser().fillLoginRegistrationForm(new User().setEmail("ma121nnnnnn@gmail.com").setPassword("M12annn1234$"));
         app.getUser().clickOnLoginButton();
     }
 
@@ -34,11 +37,29 @@ public class CreateContactTest extends TestBase {
         //assert the contact is added
         Assert.assertTrue(app.getContact().isContactCreated("Karl"));
     }
+    @Test(dataProviderClass = DataProviders.class,dataProvider = "addContactFromCsvFile")
+    public void addContactFromCsvFilePositiveTest(Contact contact) {
+
+        app.getHeader().clickOnAddLink();
+        app.getContact().fillAddContactForm(contact);
+
+        app.getContact().clickOnSaveButton();
+
+    }
+
+    @Test(dataProviderClass = DataProviders.class,dataProvider = "checkAddDataWithNegativeDate")
+    public void addContactWithNegativeDataTest(Contact contact) {
+
+        app.getHeader().clickOnAddLink();
+        app.getContact().fillAddContactForm(contact);
+
+        app.getContact().clickOnSaveButton();
+        Assert.assertTrue(app.getContact().isAlertPresent());
+    }
 
     @AfterMethod
-    public void removeContact() {
-        app.getContact().searchNewCreatedContact();
-        app.getContact().removeElement();
+    public void postCondition() {
+        app.getContact().removeContact();
     }
 }
 //  public void postCondition() {
