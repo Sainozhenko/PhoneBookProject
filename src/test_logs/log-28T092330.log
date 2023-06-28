@@ -1,0 +1,52 @@
+377  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\saino\IdeaProjects\PhoneBookProject\src\test\resources\negative.xml
+
+1839 [main] INFO  com.phonebook.tests.TestBase -- Start test openHomePageTest with data: []
+1857 [main] INFO  com.phonebook.tests.TestBase -- PASSED: openHomePageTest
+1857 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+1857 [main] INFO  com.phonebook.tests.TestBase -- ============================
+1859 [main] INFO  com.phonebook.tests.TestBase -- Start test searchAbout with data: []
+1869 [main] INFO  com.phonebook.tests.TestBase -- PASSED: searchAbout
+1869 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+1869 [main] INFO  com.phonebook.tests.TestBase -- ============================
+1870 [main] INFO  com.phonebook.tests.TestBase -- Start test searchHeader with data: []
+1880 [main] INFO  com.phonebook.tests.TestBase -- PASSED: searchHeader
+1880 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+1880 [main] INFO  com.phonebook.tests.TestBase -- ============================
+1881 [main] INFO  com.phonebook.tests.TestBase -- Start test searchHome with data: []
+1891 [main] INFO  com.phonebook.tests.TestBase -- PASSED: searchHome
+1891 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+1891 [main] INFO  com.phonebook.tests.TestBase -- ============================
+1892 [main] INFO  com.phonebook.tests.TestBase -- Start test searchLogin with data: []
+1902 [main] INFO  com.phonebook.tests.TestBase -- PASSED: searchLogin
+1902 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+1902 [main] INFO  com.phonebook.tests.TestBase -- ============================
+1903 [main] INFO  com.phonebook.tests.TestBase -- Start test loginNegativeWithoutPasswordTest with data: []
+3112 [main] INFO  com.phonebook.tests.TestBase -- PASSED: loginNegativeWithoutPasswordTest
+3112 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+3112 [main] INFO  com.phonebook.tests.TestBase -- ============================
+3118 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Marc', phone='1234567890'}]
+4699 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactFromCsvFilePositiveTest
+4699 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+4699 [main] INFO  com.phonebook.tests.TestBase -- ============================
+4700 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Marc', phone='12345678904'}]
+16014 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactFromCsvFilePositiveTest
+16014 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+16014 [main] INFO  com.phonebook.tests.TestBase -- ============================
+16014 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Marc', phone='123456789044'}]
+27272 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactFromCsvFilePositiveTest
+27272 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+27272 [main] INFO  com.phonebook.tests.TestBase -- ============================
+27272 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Marc', phone='1234567890344'}]
+38467 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactFromCsvFilePositiveTest
+38467 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+38467 [main] INFO  com.phonebook.tests.TestBase -- ============================
+38467 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactPositiveTest with data: []
+49704 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactPositiveTest
+49704 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+49704 [main] INFO  com.phonebook.tests.TestBase -- ============================
+49705 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactWithNegativeDataTest with data: [Contact{name='Marc', phone='123456789'}]
+71064 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactWithNegativeDataTest
+71064 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+71064 [main] INFO  com.phonebook.tests.TestBase -- ============================
+71065 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactWithNegativeDataTest with data: [Contact{name='Marc', phone='12345678'}]

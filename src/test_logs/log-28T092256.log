@@ -1,0 +1,36 @@
+364  [main] INFO  org.testng.internal.Utils -- [TestNG] Running:
+  C:\Users\saino\IdeaProjects\PhoneBookProject\src\test\resources\negative.xml
+
+1865 [main] INFO  com.phonebook.tests.TestBase -- Start test openHomePageTest with data: []
+1879 [main] INFO  com.phonebook.tests.TestBase -- PASSED: openHomePageTest
+1879 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+1879 [main] INFO  com.phonebook.tests.TestBase -- ============================
+1881 [main] INFO  com.phonebook.tests.TestBase -- Start test searchAbout with data: []
+1890 [main] INFO  com.phonebook.tests.TestBase -- PASSED: searchAbout
+1890 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+1890 [main] INFO  com.phonebook.tests.TestBase -- ============================
+1891 [main] INFO  com.phonebook.tests.TestBase -- Start test searchHeader with data: []
+1899 [main] INFO  com.phonebook.tests.TestBase -- PASSED: searchHeader
+1899 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+1899 [main] INFO  com.phonebook.tests.TestBase -- ============================
+1900 [main] INFO  com.phonebook.tests.TestBase -- Start test searchHome with data: []
+1908 [main] INFO  com.phonebook.tests.TestBase -- PASSED: searchHome
+1908 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+1908 [main] INFO  com.phonebook.tests.TestBase -- ============================
+1909 [main] INFO  com.phonebook.tests.TestBase -- Start test searchLogin with data: []
+1917 [main] INFO  com.phonebook.tests.TestBase -- PASSED: searchLogin
+1917 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+1917 [main] INFO  com.phonebook.tests.TestBase -- ============================
+1918 [main] INFO  com.phonebook.tests.TestBase -- Start test loginPositiveTest with data: []
+2936 [main] INFO  com.phonebook.tests.TestBase -- PASSED: loginPositiveTest
+2936 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+2936 [main] INFO  com.phonebook.tests.TestBase -- ============================
+2944 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Marc', phone='1234567890'}]
+14514 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactFromCsvFilePositiveTest
+14514 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+14514 [main] INFO  com.phonebook.tests.TestBase -- ============================
+14514 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Marc', phone='12345678904'}]
+25797 [main] INFO  com.phonebook.tests.TestBase -- PASSED: addContactFromCsvFilePositiveTest
+25797 [main] INFO  com.phonebook.tests.TestBase -- Stop test
+25797 [main] INFO  com.phonebook.tests.TestBase -- ============================
+25797 [main] INFO  com.phonebook.tests.TestBase -- Start test addContactFromCsvFilePositiveTest with data: [Contact{name='Marc', phone='123456789044'}]
