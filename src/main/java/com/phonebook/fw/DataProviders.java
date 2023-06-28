@@ -44,12 +44,13 @@ public class DataProviders {
         while (line != null) {
 
             String[] split = line.split(",");
-
-            list.add(new Object[]{new Contact().setName(split[0]).setLastname(split[1]).setPhone(split[2])
-                    .setEmail(split[3]).setAddress(split[4]).setDesc(split[5])});
-            line = reader.readLine();
+            String phone = split[2];
+            if (phone.length() < 10|| phone.length() >14) { // Boundary Value
+                list.add(new Object[]{new Contact().setName(split[0]).setLastname(split[1]).setPhone(split[2])
+                        .setEmail(split[3]).setAddress(split[4]).setDesc(split[5])});
+                line = reader.readLine();
+            }
         }
         return list.iterator();
     }
-
 }

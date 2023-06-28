@@ -3,8 +3,6 @@
 <suite name="Regression" verbose="1">
     <test name="Regression">
         <classes>
-            <class name="com.phonebook.tests.HomePageTests" />
-            <class name="com.phonebook.tests.HeaderTests" />
             <class name="com.phonebook.tests.LoginTests">
                 <methods>
                     <exclude name=".*Positive.*"></exclude>
