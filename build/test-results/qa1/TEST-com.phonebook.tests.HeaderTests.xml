@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.HeaderTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2023-06-29T08:46:44" hostname="OMEN_UKR" time="0.042">
+  <properties/>
+  <testcase name="searchAbout" classname="com.phonebook.tests.HeaderTests" time="0.008"/>
+  <testcase name="searchHeader" classname="com.phonebook.tests.HeaderTests" time="0.009"/>
+  <testcase name="searchHome" classname="com.phonebook.tests.HeaderTests" time="0.009"/>
+  <testcase name="searchLogin" classname="com.phonebook.tests.HeaderTests" time="0.01"/>
+  <system-out><![CDATA[10:46:44.299 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test searchAbout with data: []
+10:46:44.308 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: searchAbout
+10:46:44.308 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:46:44.308 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+10:46:44.309 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test searchHeader with data: []
+10:46:44.319 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: searchHeader
+10:46:44.319 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:46:44.320 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+10:46:44.321 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test searchHome with data: []
+10:46:44.331 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: searchHome
+10:46:44.331 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:46:44.331 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+10:46:44.332 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test searchLogin with data: []
+10:46:44.343 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSED: searchLogin
+10:46:44.343 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test
+10:46:44.343 [Test worker] INFO  com.phonebook.tests.TestBase -- ============================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

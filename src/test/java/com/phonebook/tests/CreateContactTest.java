@@ -48,7 +48,7 @@ public class CreateContactTest extends TestBase {
     }
 
     @Test(dataProviderClass = DataProviders.class,dataProvider = "checkAddDataWithNegativeDate")
-    public void addContactWithNegativeDataTest(Contact contact) {
+    public void addContactFromNegativeDataTest(Contact contact) {
 
         app.getHeader().clickOnAddLink();
         app.getContact().fillAddContactForm(contact);
