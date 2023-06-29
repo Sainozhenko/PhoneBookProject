@@ -63,7 +63,7 @@ public void ensurePrecondition() {
                 .setAddress("Koblenz")
                 .setDesc("goalkeeper"));
         app.getContact().clickOnSaveButton();
-   
+
     Assert.assertTrue(app.getContact().isContactCreated("Marc"));
 }
     @Test
